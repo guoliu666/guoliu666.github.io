@@ -1,0 +1,358 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.w {
+    /* 第一步：确认版心。 w是width的简写 */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 下面是行列的样式 */
+/* 头部大模块*/
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+/* logo模块 */
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+/* 导航栏模块 */
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+/* 搜索模块 */
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    font-size: 14px;
+    color: #bfbfbf;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* 按钮button默认有个边框，所以会掉下去 */
+    border: 0;
+    background: url(images/btn.png);
+}
+
+/* 用户模块 */
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* banner大模块 */
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 421px;
+    background: url(images/banner2.png) no-repeat top center;
+}
+
+.banner .w .subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner .w .subnav li {
+    height: 45px;
+    line-height: 45px;
+    margin: 0 24px;
+}
+
+.banner .w .subnav li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner .w .subnav li a span {
+    float: right;
+}
+
+.banner .w .subnav li a:hover {
+    color: #00b4ff;
+}
+
+.course {
+    float: right;
+    /* 浮动的盒子不会有外边距合并（塌陷）的问题。 如果不浮动，父盒子有高且子盒子设置了margin会塌陷 */
+    margin-top: 50px;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.course h2 {
+    height: 48px;
+    line-height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.course .bd {
+    /* bd没有设置宽，所以加左右边框不会撑大盒子 */
+    padding: 0 20px;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd .more {
+    /* a是行内元素，这里转换成块元素就可以设置宽高了 */
+    display: block;
+    margin-top: 5px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 精品推荐部分 */
+.goods {
+    margin-top: 10px;
+    padding: 20px 0;
+    height: 20px;
+    line-height: 20px;
+    background-color: #ffff;
+    text-align: center;
+    box-shadow: 0 4px 3px 3px rgba(0, 0, 0, .1);
+}
+
+.goods h3 {
+    float: left;
+    width: 125px;
+    font-size: 16PX;
+    color: #00a4ff;
+    border-right: 1px solid #bfbfbf;
+}
+
+.goods .good-item ul li a {
+    float: left;
+    width: 112px;
+    font-size: 16px;
+    color: #050505;
+    border-right: 1px solid #bfbfbf;
+}
+
+.goods .mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* box部分 */
+.box {
+    padding-top: 10px;
+}
+
+.box .box-hd {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 10px;
+}
+
+.box .box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+
+.box .box-hd a {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.box .box-bd ul li {
+    position: relative;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+}
+
+.box .box-bd ul {
+    /* 小技巧：只要把小li的父盒子ul改的足够宽，就不用去除旁边多余的margin,反正超出的margin也看不到 */
+    width: 1225px;
+}
+
+.box .box-bd ul li>img {
+    /* 只让li的亲儿子100% */
+    /* 如果图片宽超出了盒子，强制用width：100%，来将就盒子 */
+    width: 100%;
+}
+
+.box ul li em {
+    position: absolute;
+    top: 4px;
+    right: -4px;
+}
+
+.box .box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box .box-bd ul li .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box .box-bd ul li .info span {
+    color: #ff7c2d;
+}
+
+/* 因为担心后面会加更多小li，所以没有给父盒子ul加高度。导致后面的部分会跑上来。这里要清除浮动 */
+
+
+/* 底部footer部分 */
+.footer {
+    height: 415px;
+    background-color: #fff;
+}
+
+.footer .w {
+    /* 这里给margin会塌陷 */
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+}
+
+.copyright p {
+    margin: 20px 0 15px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.copyright .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff
+}
+
+.inks {
+    float: right;
+}
+
+.inks dl dt {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.inks dl dd a {
+    font-size: 12px;
+    color: #333;
+}
+
+/* 给大inks盒子里的每个无序列表dl组加上浮动，就拥有行内块元素的特性，3个dl就在一行上了 */
+.inks dl {
+    float: left;
+    margin-left: 100px;
+}
